@@ -1,5 +1,3 @@
-import edImage from "../../../assets/ed-image.png";
-
 type PatientEducationCardProps = {
   className?: string;
   imageSrc?: string;
@@ -41,7 +39,7 @@ export default function PatientEducationCard({
         {/*image */}
         <div className="flex justify-center items-center flex-1">
           <img
-            src={edImage}
+            src="/ed-image.png"
             alt="Patient Education"
             className="max-w-full max-h-full object-contain"
           />

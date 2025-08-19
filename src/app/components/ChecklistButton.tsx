@@ -22,7 +22,7 @@ export default function ChecklistButton() {
       }}
     >
       <img
-        src="/src/assets/checklist.png"
+        src="/checklist.png"
         alt="Checklist"
         className="w-auto h-auto max-w-full max-h-full"
       />

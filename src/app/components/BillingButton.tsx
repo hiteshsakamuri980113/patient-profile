@@ -15,7 +15,7 @@ export default function BillingButton() {
     "
     >
       <img
-        src="/src/assets/dollar-sign.png"
+        src="/dollar-sign.png"
         alt="Dollar sign"
         className="h-[28px] w-auto"
         style={{ marginLeft: "5%" }}

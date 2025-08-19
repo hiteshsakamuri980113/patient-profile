@@ -1,10 +1,3 @@
-import appLogo from "../../assets/app-logo.png";
-import backButton from "../../assets/back-button.png";
-import homeIcon from "../../assets/home.png";
-import dashBoard from "../../assets/dashboard.png";
-import logoutIcon from "../../assets/logout.png";
-import rectangle7108 from "../../assets/Rectangle 7108.png";
-
 export default function SidebarNav() {
   return (
     <aside
@@ -24,7 +17,7 @@ export default function SidebarNav() {
         aria-label="App Logo"
       >
         <img
-          src={appLogo}
+          src="/app-logo.png"
           alt="App Logo"
           className="hover:opacity-90 hover:scale-105 transition-all duration-200 ease-in-out hover:drop-shadow-lg"
           style={{
@@ -42,14 +35,7 @@ export default function SidebarNav() {
         }}
         aria-label="Home"
       >
-        <img
-          src={homeIcon}
-          alt="Home"
-          className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
-          style={{
-            opacity: 1,
-          }}
-        />
+        <img src="/home.png" alt="Home" className="w-4 h-4" />
       </button>
 
       {/* 3. BackButton */}
@@ -62,7 +48,7 @@ export default function SidebarNav() {
         aria-label="Back"
       >
         <img
-          src={backButton}
+          src="/back-button.png"
           alt="Back"
           className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
           style={{
@@ -83,7 +69,7 @@ export default function SidebarNav() {
         aria-label="Dashboard"
       >
         <img
-          src={dashBoard}
+          src="/dashboard.png"
           alt="Dashboard"
           className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
           style={{
@@ -102,7 +88,7 @@ export default function SidebarNav() {
           left: "23px",
           opacity: 1,
           borderRadius: "3px",
-          backgroundImage: `url(${rectangle7108})`,
+          backgroundImage: `url(/Rectangle\ 7108.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -118,7 +104,7 @@ export default function SidebarNav() {
         aria-label="Logout"
       >
         <img
-          src={logoutIcon}
+          src="/logout.png"
           alt="Logout"
           className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
           style={{

@@ -47,7 +47,7 @@ export default function PatientProfilePage() {
             {/* Group 1 Image */}
             <div style={{ marginRight: "16px" }}>
               <img
-                src="/src/assets/Group 1.png"
+                src="/Group 1.png"
                 alt="Patient Avatar"
                 className="w-auto h-auto"
               />
@@ -162,7 +162,7 @@ export default function PatientProfilePage() {
 
       {/* Background Vector Images */}
       <img
-        src="/src/assets/Vector1.png"
+        src="/Vector1.png"
         alt=""
         className="absolute opacity-20 pointer-events-none"
         style={{
@@ -172,7 +172,7 @@ export default function PatientProfilePage() {
         }}
       />
       <img
-        src="/src/assets/Vector2.png"
+        src="/Vector2.png"
         alt=""
         className="absolute opacity-5 pointer-events-none"
         style={{
@@ -183,7 +183,7 @@ export default function PatientProfilePage() {
       />
 
       <img
-        src="/src/assets/Vector3.png"
+        src="/Vector3.png"
         alt=""
         className="absolute opacity-30 pointer-events-none"
         style={{
@@ -193,7 +193,7 @@ export default function PatientProfilePage() {
         }}
       />
       <img
-        src="/src/assets/Vector4.png"
+        src="/Vector4.png"
         alt=""
         className="absolute opacity-20 pointer-events-none"
         style={{

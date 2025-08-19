@@ -1,5 +1,3 @@
-import EditButton from "../../../assets/edit-button.png";
-
 interface InfoCardProps {
   phone: string;
   email: string;
@@ -144,7 +142,7 @@ export default function PatientInfoCard({
           onClick={onEdit}
           className="ml-8 border-0 bg-transparent p-0 m-0 cursor-pointer outline-none appearance-none hover:scale-110 hover:brightness-110 hover:drop-shadow-md transition-all duration-200 ease-out"
         >
-          <img src={EditButton} alt="Edit" className="block" />
+          <img src="/edit-button.png" alt="Edit" className="block" />
         </button>
       )}
     </div>

@@ -70,7 +70,7 @@ export default function StatsCard({
                   {streakCount}
                 </span>
                 <img
-                  src="/src/assets/fire-icon.png"
+                  src="/fire-icon.png"
                   alt="Fire icon"
                   className="w-3 h-3"
                   style={{ marginLeft: "8px" }}
@@ -86,8 +86,8 @@ export default function StatsCard({
               {DAY_LABELS.map((day, i) => {
                 const isSaturday = day === "Sat";
                 const imageSrc = isSaturday
-                  ? "/src/assets/task_alt.png"
-                  : "/src/assets/motion_photos_on.png";
+                  ? "/task_alt.png"
+                  : "/motion_photos_on.png";
                 const isLastColumn = i === DAY_LABELS.length - 1;
 
                 return (
