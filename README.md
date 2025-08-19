@@ -1,94 +1,45 @@
-# React + TypeScript + Vite
+# Patient Profile UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based patient profile interface for healthcare applications.
 
-Currently, two official plugins are available:
+## Overview
 
-## Expanding the ESLint configuration
+This UI displays patient information and health data including:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Patient details card with basic information
+- HEP (Home Exercise Program) summary
+- Patient education resources
+- Statistics and compliance tracking
 
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- React + TypeScript
+- Vite (build tool)
+- Tailwind CSS (styling)
+- Inter font family
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+## Setup
+
+1. Install dependencies:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
-
-## Tailwind CSS
-
-Tailwind CSS has been initialized for this project.
-
-Key files:
-
-- `tailwind.config.js` – configuration & content globs.
-- `postcss.config.js` – PostCSS pipeline with Tailwind + Autoprefixer.
-- `src/index.css` – includes the `@tailwind` base/components/utilities directives.
-
-Quick start:
+2. Start development server:
 
 ```bash
 npm run dev
 ```
 
-Add classes directly in JSX:
+3. Build for production:
 
-```tsx
-<h1 className="text-3xl font-bold tracking-tight">Hello</h1>
+```bash
+npm run build
 ```
 
-Customize theme by editing `theme.extend` in `tailwind.config.js`.
+## Development
 
-Production build (`npm run build`) purges unused styles automatically based on the `content` globs.
+The app runs on `http://localhost:5173` in development mode with hot reload.
 
-For design tokens or custom utilities, extend via the config or author CSS in `@layer components` / `@layer utilities` blocks inside `index.css`.
+Main components are located in `src/app/components/cards/`.

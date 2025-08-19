@@ -1,5 +1,8 @@
 import AppLayout from "../layout/AppLayout";
 import PatientInfoCard from "../components/cards/PatientInfoCard";
+import HEPSummaryCard from "../components/cards/HEPSummaryCard";
+import PatientEducationCard from "../components/cards/PatientEducationCard";
+import StatsCard from "../components/cards/StatsCard";
 
 export default function PatientProfilePage() {
   return (
@@ -7,8 +10,8 @@ export default function PatientProfilePage() {
       {/* Container for the entire patient profile section */}
       <div
         style={{
-          width: "1297px",
-          height: "174.5px",
+          width: "1300px",
+          height: "175px",
           background: "#FFFFFF",
           border: "1px solid #E4E4E4",
           boxShadow: "0px 1px 4px 0px #00000040",
@@ -23,7 +26,7 @@ export default function PatientProfilePage() {
             fontFamily: "Inter",
             lineHeight: "100%",
             fontSize: "12px",
-            marginBottom: "20px", // Increased spacing to prevent congestion
+            marginBottom: "20px",
           }}
         >
           <span
@@ -116,6 +119,39 @@ export default function PatientProfilePage() {
             injuryLocation="Right"
             diagnosis="Other specified malignant neoplasm of skin, unspecified - C4499"
             onEdit={() => {}}
+          />
+        </div>
+      </div>
+      {/* Two-column layout: Left (HEP + Education cards) | Right (Stats + other cards) */}
+      <div
+        style={{
+          margin: "20px 25px",
+          display: "grid",
+          gridTemplateColumns: "750px 1fr",
+          gap: "120px",
+        }}
+      >
+        {/* Left Column: HEP and Education cards stacked */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+          <HEPSummaryCard
+            title="New HEP for Wimtach Client"
+            editedAgo="16 hours ago"
+            sessionsPerDay={5}
+            totalReps={254}
+            onEdit={() => console.log("Edit HEP")}
+          />
+          <PatientEducationCard />
+        </div>
+
+        {/* Right Column: Stats and other items */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+          <StatsCard
+            periodLabel="for Period 3"
+            streakCount={1}
+            weeksEnrolled={9}
+            compliance="16/30"
+            activeDayIndex={3}
+            onViewStats={() => console.log("View Stats")}
           />
         </div>
       </div>
