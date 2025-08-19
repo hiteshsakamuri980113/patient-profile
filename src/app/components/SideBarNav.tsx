@@ -35,7 +35,11 @@ export default function SidebarNav() {
         }}
         aria-label="Home"
       >
-        <img src="/home.png" alt="Home" className="w-4 h-4" />
+        <img
+          src="/home.png"
+          alt="Home"
+          className="w-4 h-4 hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
+        />
       </button>
 
       {/* 3. BackButton */}
@@ -88,7 +92,7 @@ export default function SidebarNav() {
           left: "23px",
           opacity: 1,
           borderRadius: "3px",
-          backgroundImage: `url(/Rectangle\ 7108.png)`,
+          backgroundImage: `url('/Rectangle 7108.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
