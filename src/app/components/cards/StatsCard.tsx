@@ -1,5 +1,3 @@
-import React from "react";
-
 type StatsCardProps = {
   title?: string;
   periodLabel?: string;
@@ -14,12 +12,10 @@ type StatsCardProps = {
 const DAY_LABELS = ["Wed", "Thru", "Fri", "Sat", "Sun", "Mon", "Today"];
 
 export default function StatsCard({
-  title = "Stats",
   periodLabel = "for Period 3",
   streakCount = 1,
   weeksEnrolled = 9,
   compliance = "16/30",
-  activeDayIndex = 3, //sat
   onViewStats,
   className = "",
 }: StatsCardProps) {

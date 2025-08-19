@@ -1,5 +1,3 @@
-import React from "react";
-
 type HEPSummaryCardProps = {
   title: string;
   editedAgo: string;
