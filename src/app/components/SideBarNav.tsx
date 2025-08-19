@@ -1,7 +1,7 @@
 import appLogo from "../../assets/app-logo.png";
 import backButton from "../../assets/back-button.png";
 import homeIcon from "../../assets/home.png";
-import clipBoard from "../../assets/clipboard.png";
+import dashBoard from "../../assets/dashboard.png";
 import logoutIcon from "../../assets/logout.png";
 import rectangle7108 from "../../assets/Rectangle 7108.png";
 
@@ -63,8 +63,8 @@ export default function SidebarNav() {
 
       {/* 4. ClipBoard */}
       <img
-        src={clipBoard}
-        alt="Clipboard"
+        src={dashBoard}
+        alt="Dashboard"
         onClick={() => {
           console.log("Clipboard clicked!");
         }}
