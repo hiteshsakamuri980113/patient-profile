@@ -18,65 +18,81 @@ export default function SidebarNav() {
       aria-label="Primary"
     >
       {/* 1. Logo */}
-      <img
-        src={appLogo}
-        alt="App Logo"
-        className="absolute cursor-pointer hover:opacity-80 transition-opacity"
-        style={{
-          top: "27px",
-          left: "17px",
-          opacity: 1,
-        }}
-      />
+      <button
+        className="absolute rounded-lg hover:bg-white/10 transition-all duration-200 ease-in-out cursor-pointer border-none bg-transparent p-[5px]"
+        style={{ top: "22px", left: "12px" }}
+        aria-label="App Logo"
+      >
+        <img
+          src={appLogo}
+          alt="App Logo"
+          className="hover:opacity-90 hover:scale-105 transition-all duration-200 ease-in-out hover:drop-shadow-lg"
+          style={{
+            opacity: 1,
+          }}
+        />
+      </button>
 
       {/* 2. Home */}
-      <img
-        src={homeIcon}
-        alt="Home"
+      <button
+        className="absolute rounded-lg hover:bg-white/15 transition-all duration-200 ease-in-out cursor-pointer border-none bg-transparent p-[5px]"
+        style={{ top: "100px", left: "15px" }}
         onClick={() => {
           console.log("Home clicked!");
         }}
-        className="absolute cursor-pointer hover:opacity-80 transition-opacity hover:scale-105"
-        style={{
-          top: "105px",
-          left: "20px",
-          opacity: 1,
-        }}
-      />
+        aria-label="Home"
+      >
+        <img
+          src={homeIcon}
+          alt="Home"
+          className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
+          style={{
+            opacity: 1,
+          }}
+        />
+      </button>
 
       {/* 3. BackButton */}
-      <img
-        src={backButton}
-        alt="Back"
+      <button
+        className="absolute rounded-lg hover:bg-white/15 transition-all duration-200 ease-in-out cursor-pointer border-none bg-transparent p-[5px]"
+        style={{ top: "155px", left: "25px" }}
         onClick={() => {
           console.log("Back clicked!");
         }}
-        className="absolute cursor-pointer hover:opacity-80 transition-opacity hover:scale-105"
-        style={{
-          top: "160px",
-          left: "30px",
-          opacity: 1,
-          transform: "rotate(180deg)",
-          filter: "brightness(0) invert(1)",
-        }}
-      />
+        aria-label="Back"
+      >
+        <img
+          src={backButton}
+          alt="Back"
+          className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
+          style={{
+            opacity: 1,
+            transform: "rotate(180deg)",
+            filter: "brightness(0) invert(1)",
+          }}
+        />
+      </button>
 
-      {/* 4. ClipBoard */}
-      <img
-        src={dashBoard}
-        alt="Dashboard"
+      {/* 4. Dashboard */}
+      <button
+        className="absolute rounded-lg hover:bg-white/15 transition-all duration-200 ease-in-out cursor-pointer border-none bg-transparent p-[5px]"
+        style={{ top: "204px", left: "19px" }}
         onClick={() => {
-          console.log("Clipboard clicked!");
+          console.log("Dashboard clicked!");
         }}
-        className="absolute cursor-pointer hover:opacity-80 transition-opacity hover:scale-105"
-        style={{
-          top: "209px",
-          left: "24px",
-          opacity: 1,
-        }}
-      />
+        aria-label="Dashboard"
+      >
+        <img
+          src={dashBoard}
+          alt="Dashboard"
+          className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
+          style={{
+            opacity: 1,
+          }}
+        />
+      </button>
 
-      {/* Rectangle - Below Clipboard */}
+      {/* Active tab indicator */}
       <div
         className="absolute"
         style={{
@@ -93,19 +109,23 @@ export default function SidebarNav() {
       />
 
       {/* 5. Logout */}
-      <img
-        src={logoutIcon}
-        alt="Logout"
+      <button
+        className="absolute rounded-lg hover:bg-white/15 transition-all duration-200 ease-in-out cursor-pointer border-none bg-transparent p-[5px]"
+        style={{ top: "697px", left: "19px" }}
         onClick={() => {
           console.log("Logout clicked!");
         }}
-        className="absolute cursor-pointer hover:opacity-80 transition-opacity hover:scale-105"
-        style={{
-          top: "702px",
-          left: "24px",
-          opacity: 1,
-        }}
-      />
+        aria-label="Logout"
+      >
+        <img
+          src={logoutIcon}
+          alt="Logout"
+          className="hover:opacity-90 hover:scale-110 transition-all duration-200 ease-in-out hover:drop-shadow-lg hover:brightness-110"
+          style={{
+            opacity: 1,
+          }}
+        />
+      </button>
     </aside>
   );
 }

@@ -164,7 +164,7 @@ export default function StatsCard({
           text-[16px] font-medium leading-[30px]
           flex items-center justify-center text-center
           border-0 outline-none appearance-none cursor-pointer
-          hover:brightness-105 active:brightness-95 transition
+          hover:brightness-110 hover:scale-105 hover:shadow-lg active:brightness-95 transition-all duration-200 ease-out
           focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70
         "
         style={{ ...interFontStyle, fontWeight: 500, color: "#FFFFFF" }}

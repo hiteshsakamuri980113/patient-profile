@@ -40,7 +40,7 @@ export default function PatientInfoCard({
           {/* 2x2 Grid Layout: 2 rows, 2 columns with custom widths */}
           <div
             className="grid h-full"
-            style={{ gridTemplateColumns: "33% 67%" }}
+            style={{ gridTemplateColumns: "30% 70%" }}
           >
             {/* Row 1, Column 1: Phone */}
             <div
@@ -142,7 +142,7 @@ export default function PatientInfoCard({
         <button
           aria-label="Edit"
           onClick={onEdit}
-          className="ml-8 border-0 bg-transparent p-0 m-0 cursor-pointer outline-none appearance-none"
+          className="ml-8 border-0 bg-transparent p-0 m-0 cursor-pointer outline-none appearance-none hover:scale-110 hover:brightness-110 hover:drop-shadow-md transition-all duration-200 ease-out"
         >
           <img src={EditButton} alt="Edit" className="block" />
         </button>

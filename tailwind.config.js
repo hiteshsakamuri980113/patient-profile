@@ -8,8 +8,8 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        primary: "#7E57C2", // purple
-        secondary: "#4D4482", // secondary purple
+        primary: "#7E57C2",
+        secondary: "#4D4482",
         accentOrange: "#F9A825",
         accentBlue: "#1976D2",
         accentPink: "#E1BEE7",

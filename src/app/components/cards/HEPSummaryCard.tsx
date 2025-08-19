@@ -94,7 +94,7 @@ export default function HEPSummaryCard({
       {/* Right action button */}
       <button
         onClick={onEdit}
-        className="w-[150px] h-full flex items-center justify-center bg-[#E791D9] text-[16px] font-inter font-medium leading-[30px] tracking-[0%] text-center border-0 outline-none appearance-none cursor-pointer hover:brightness-105 active:brightness-95 transition"
+        className="w-[150px] h-full flex items-center justify-center bg-[#E791D9] text-[16px] font-inter font-medium leading-[30px] tracking-[0%] text-center border-0 outline-none appearance-none cursor-pointer hover:brightness-110 hover:scale-105 hover:shadow-lg active:brightness-95 transition-all duration-200 ease-out"
         style={{ fontFamily: "Inter, sans-serif", color: "#FFFFFF" }}
       >
         Edit HEP
